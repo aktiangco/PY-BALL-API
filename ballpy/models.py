@@ -4,7 +4,7 @@ db = SQLAlchemy()
 
 # creating your table
 class Reptile(db.Model):
-    __tablename__ = 'reptiles'
+    tablename = 'reptiles'
     
     id = db.Column(db.Integer, primary_key = True)
     common_name = db.Column(db.String(250))

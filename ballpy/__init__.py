@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect
 from flask_migrate import Migrate
 
 #* for .env to work
@@ -24,7 +24,7 @@ def create_app():
     # index route
     @app.route('/')
     def index(): 
-        return 'Hello, ballpy!'
+        return redirect('/reptiles')
 
     # register reptiles blueprint 
     from . import reptile 
