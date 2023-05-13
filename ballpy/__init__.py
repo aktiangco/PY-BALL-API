@@ -24,7 +24,7 @@ def create_app():
     # index route
     @app.route('/')
     def index(): 
-        return redirect('/reptiles')
+        return 'hello ballpy'
 
     # register reptiles blueprint 
     from . import reptile 
